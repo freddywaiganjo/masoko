@@ -5,11 +5,12 @@ import org.junit.runner.notification.Failure;
 public class ExecuteAll {
 
     //All test classes can be run through this class.
-    //But currently you can run one by one as the url is launched for every class
+    //But currently you can run one by one as the base url is launched in every class
     public static void main(String[] args) {
         Result result = JUnitCore.runClasses(
                 com.example.tests.Registration.class,
                 com.example.tests.Login.class
+//                com.example.tests.AddToCart.class
                 );
 
         for (Failure failure : result.getFailures()) {
