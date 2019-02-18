@@ -29,7 +29,7 @@ public class AddToCart {
         baseUrl = "https://www.masoko.com/";
     }
 
-    //Positive Test
+    //Positive Test Case
     @Test
     public void testShopping() throws Exception {
         System.out.println("Starting addToCart Execution");

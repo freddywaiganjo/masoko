@@ -23,9 +23,9 @@ public class Login {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
         System.out.println("####Driver Configured");
         driver = new ChromeDriver();
-        System.out.println("####Driver Created");
+        System.out.println("###Driver Created");
         driver.manage().window().maximize();
-        System.out.println("####Driver found");
+        System.out.println("###Driver found");
         baseUrl = "https://www.masoko.com/";
         System.out.println("####Opening URL "+ baseUrl);
     }
@@ -50,7 +50,7 @@ public class Login {
         System.out.println("Finished Login Execution");
     }
 
-    //Positive Test
+    //Login Positive Test
     @Test
     public void testLogin() throws Exception {
         System.out.println("Starting Login Execution");

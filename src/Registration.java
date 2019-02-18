@@ -22,17 +22,16 @@ public class Registration {
 
     @Before
     public void setUp() throws Exception {
-//        driver = new FirefoxDriver();
 
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
         System.out.println("####Driver found1");
          driver = new ChromeDriver();
-        System.out.println("####Driver found2");
+        System.out.println("###Driver found2");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         System.out.println("####Driver found");
         baseUrl = "https://www.masoko.com/";
-        System.out.println("####Opening URL "+ baseUrl);
+        System.out.println("###Opening URL "+ baseUrl);
 //        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
     }
 
@@ -41,7 +40,7 @@ public class Registration {
         System.out.println("Starting Registration Execution");
 
         driver.get(baseUrl);
-        System.out.println("####Opened URL "+ baseUrl);
+        System.out.println("###Opened URL "+ baseUrl);
         driver.findElement(By.className("registration-link__text")).click();
         driver.findElement(By.id("firstname")).click();
         driver.findElement(By.id("firstname")).clear();
@@ -66,15 +65,7 @@ public class Registration {
         driver.findElement(By.id("password-confirmation")).clear();
         driver.findElement(By.id("password-confirmation")).sendKeys("Admin@2018");
         driver.findElement(By.id("email_address")).click();
-            System.out.println((char)27 + "[32m" + "Finished Registration Execution");
-
-
-//        assertEquals(2,driver.findElement(By.id("")));
-
-       /* {
-//            System.out.println("#####Exception Error Found: "+ex);
-            System.out.println((char)27 + "[31m" + "#####Exception Error Found: "+ex);
-        }*/
+        System.out.println((char)27 + "[32m" + "Finished Registration Execution");
 
     }
 }
